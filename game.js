@@ -49,7 +49,7 @@ function nextSequence(){
     },200)
     setTimeout(function(){
         runningStatus=false;
-    }, 200+400*gamePattern.length-1)
+    }, 200+400*(gamePattern.length-1))
 }
 
 function playSound(color){
