@@ -1,4 +1,4 @@
-var runningStatus= false;
+var runningStatus;
 var randomNumber;
 var buttonColors = ["red", "blue", "green", "yellow"];
 var gamePattern= [];
@@ -12,6 +12,7 @@ $(document).keypress(function() {
     if(!started){
         started=true;
         nextSequence();
+        runningStatus = false;
     }
 })
 
