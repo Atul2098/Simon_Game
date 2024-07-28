@@ -12,7 +12,6 @@ $(document).keypress(function() {
     if(!started){
         started=true;
         nextSequence();
-        runningStatus = false;
     }
 })
 
