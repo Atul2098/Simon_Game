@@ -55,6 +55,7 @@ function playSound(color){
     var sound = new Audio("./sounds/" + color + ".mp3");
     sound.play();
 }
+
 function checkPattern(patternLength){
     if(userPattern[patternLength] == gamePattern[patternLength]){
         if(userPattern.length == gamePattern.length){
@@ -69,7 +70,7 @@ function checkPattern(patternLength){
         setTimeout(function(){
             $("body").removeClass("game-over");
         },250)
-        $("#level-title ").text("Game-Over, Press any key to Start Again");
+        $("#level-title ").text("Game-Over, Press Any Key to Start Again");
         startOver();
     }  
 }
